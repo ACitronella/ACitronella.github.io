@@ -1,4 +1,4 @@
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Phuriwat Angkoondittaphong",
@@ -10,7 +10,7 @@ export const RESUME_DATA = {
   summary:
     "A computer science student undergrad who passionate in deep learning research. Currently, I'm focusing on low-budget deep active learning and hopefully someday I will learn category theory.",
   avatarUrl: "https://avatars.githubusercontent.com/u/55622586?s=400&v=4",
-  personalWebsiteUrl: "https://google.com",
+  // personalWebsiteUrl: "https://google.com",
   contact: {
     email: "phuriwat.boat@gmail.com",
     tel: null,
@@ -42,7 +42,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Mosquito wing beat sound event detection",
-      company: "Bremen Spatial Cognition Center at University of Bremen",
+      company: "Bremen Spatial Cognition Center, University of Bremen",
       badges: ["Polyphonic Sound Event Detection", "Mosquito Classification", "Noise-robust Sound Event Detection"],
       description: "Utilized mosquito wing beat sound to conduct experiments on a designed and implemented noise-robust sound event detection model. The model was trained on environmental noise, in which some portion had been overlayed realistically with mosquito’s wing beat sound, then predicted when and which species and sex of mosquitoes were present in the given audio."
     },
@@ -64,7 +64,7 @@ export const RESUME_DATA = {
       school: "Faculty of ICT, Mahidol University",
       degree: "Bachelor's Degree in ICT, Major in Computer Science",
       start: "2020",
-      end: "Present",
+      end: "2024",
     },
   ],
   work: [
