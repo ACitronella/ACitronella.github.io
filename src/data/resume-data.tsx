@@ -8,7 +8,7 @@ export const RESUME_DATA = {
   about:
     "CS Student with background in Deep Learning",
   summary:
-    "A computer science student undergrad who passionate in deep learning research. Currently, I'm focusing on low-budget deep active learning and hopefully someday I will learn category theory.",
+    "A freshly graduate computer science student who passionate in deep learning research. Currently, I'm focusing on low-budget deep active learning.",
   avatarUrl: "https://avatars.githubusercontent.com/u/55622586?s=400&v=4",
   // personalWebsiteUrl: "https://google.com",
   contact: {
@@ -35,7 +35,7 @@ export const RESUME_DATA = {
   research:[
     {
       title: "Low-budget deep active learning on abnormally blink data set",
-      company: "Faculty of ICT, Mahidol University",
+      company: "Faculty of Information and Communication Technology, Mahidol University",
       badges: ["Low-budget deep active learning", "Keypoint Localization"],
       description: 
         "Performed experiments on high frame rate videos of patients with abnormal blinking. Emphasized low-budget active learning on keypoint detection tasks using contrastive learning and sequence encoding. Aimed to reduce data that is required to be annotated by ophthalmologists."
@@ -48,35 +48,46 @@ export const RESUME_DATA = {
     },
     {
       title: "Normal-Pressure Hydrocephalus (NPH) detection from CT scan images",
-      company: "Faculty of ICT, Mahidol University",
+      company: "Faculty of Information and Communication Technology, Mahidol University",
       badges: ["Image segmentaion", "Weak supervision"],
       description: "Experimented on CT scans using segmentation and classification models to detect the brain disease. Designed a pipeline that can be trained using weakly supervised data, which does not require clinical annotation. The designed pipeline has more sensitivity than radiologist and thus could be used as a screening tool which reduce time for the physicians and the patients."
     },
     {
       title: "Foot pad dermatitis (FPD) severity identifier", 
-      company: "Faculty of ICT, Mahidol University",
+      company: "Faculty of Information and Communication Technology, Mahidol University",
       badges: ["Image segmentaion", "Image classification"],
       description: "Designed a pipeline that receives duck feet images and identifies the severity of dermatitis in each foot. Maximized the accuracy by using ensemble technique and transfer learning."
     }
   ],
   education: [
     {
-      school: "Faculty of ICT, Mahidol University",
-      degree: "Bachelor's Degree in ICT, Major in Computer Science",
+      faculty: "Faculty of Information and Communication Technology",
+      school: "Mahidol University",
+      degree: "Bachelor of Science in Information and Communication Technology",
+      major: "Major in Computer Science",
       start: "2020",
       end: "2024",
     },
   ],
   work: [
     {
+      company: "Faculty of ICT, Mahidol University", // Faculty of Information and Communication Technology, Mahidol University is too long
+      link: "https://www.ict.mahidol.ac.th/",
+      badges: [],
+      title: "Student Research Assistant",
+      start: "2021",
+      end: "2024",
+      description: "See more detail in academic experience.",
+    },
+    {
       company: "BotNoi Group",
       link: "https://botnoigroup.com/",
-      badges: ["Internship"],
+      badges: [],
       title: "Backend Developer Internship",
       start: "2020",
       end: "2021",
       description:
-        "Implemented a general dashboard for the company's chat bots showing statistical information, such as the amount of active users, the amount of messages, user retention rate over a specific time period. Tech: Google Cloud Platform, Heroku, PostgraSQL, and MongoDB.",
+        "Implemented a general dashboard for the company's chat bots showing statistical information, such as the amount of active users, the amount of messages, user retention rate over a specific time period.",
     },
   ],
   publications: [
@@ -90,13 +101,20 @@ export const RESUME_DATA = {
       description: "Published in Diagnostics",
     },
     {
-      authors: "Supratak A, Kingchan S, Angkoondittaphong P, Nava-apisak P, Wongsripuemtet J, Noraset T, Kusakunniran W, Songsaeng D",
+      authors: "Supratak A, Kingchan S, Angkoondittaphong P, Nava-apisak P, Wongsripuemtet J, Noraset T, Kusakunniran W, Haddawy P, Songsaeng D",
       title: "Normal Pressure Hydrocephalus Classification using Weakly-Supervised Local Feature Extraction Algorithm",
       link: undefined,
       badges: [
         "Medical Image Processing", "Normal Pressure Hydrocephalus", "Weak Supervision", "NPH Classification"
       ],
       description: "To be published in Artificial Intelligence in Medicine",
+    },
+    {
+      authors: "Supratak A, Angkoondittaphong P, Sittirit N, Pornwatanacharoen W, Jaru-ampornpan P, Noraset T",
+      title: "A Long-Term Active Learning Framework for Eyelid Keypoint Detection in High-Frame-Rate Blinking Videos",
+      link: undefined,
+      badges: ["Active Learning", "Keypoint Detection", "High-Frame-Rate Videos", "Blink Analysis"],
+      description: "To be published in Applied Soft Computing Journal",
     }
   ],
 

@@ -227,7 +227,12 @@ export default function Page() {
                     </div>
                   </div>
                 </CardHeader>
+                <h4 className="font-mono text-sm leading-none">
+                    {education.faculty}
+                </h4>
+                {/* <CardContent className="mt-2">{education.faculty}</CardContent> */}
                 <CardContent className="mt-2">{education.degree}</CardContent>
+                <CardContent className="mt-2">{education.major}</CardContent>
               </Card>
             );
           })}
