@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
-import { ProjectCard } from "@/components/project-card";
+// import { ProjectCard } from "@/components/project-card";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -99,23 +99,22 @@ export default function Page() {
           </p>
         </Section>
          <Section>
-          <h2 className="text-xl font-bold">Academic Experience</h2>
-          {RESUME_DATA.research.map((work) => {
+          <h2 className="text-xl font-bold">Research Project</h2>
+          {RESUME_DATA.research.map((rp) => {
             return (
-              <Card key={work.company}>
+              <Card key={rp.company}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      {work.title}
-
+                      {rp.title}
                    </h3>
                   </div>
 
                   <h4 className="font-mono text-sm leading-none">
-                    {work.company}
+                    {rp.company}
                   </h4>
                   <span className="inline-flex gap-x-1">
-                    {work.badges.map((badge) => (
+                    {rp.badges.map((badge) => (
                       <Badge
                         variant="secondary"
                         className="align-middle text-xs"
@@ -127,7 +126,7 @@ export default function Page() {
                   </span>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {work.description}
+                  {rp.description}
                 </CardContent>
               </Card>
             );
@@ -136,14 +135,14 @@ export default function Page() {
   
         <Section>
           <h2 className="text-xl font-bold">Work Experience</h2>
-          {RESUME_DATA.work.map((work) => {
+          {RESUME_DATA.works.map((work) => {
             return (
               <Card key={work.company}>
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
                       <a className="hover:underline" href={work.link}>
-                        {work.company}
+                        {work.title}
                       </a>
 
                       <span className="inline-flex gap-x-1">
@@ -164,7 +163,7 @@ export default function Page() {
                   </div>
 
                   <h4 className="font-mono text-sm leading-none">
-                    {work.title}
+                    {work.company}
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
@@ -211,6 +210,54 @@ export default function Page() {
             );
           })}
         </Section>
+        
+        <Section>
+          <h2 className="text-xl font-bold">Presentation</h2>
+          {RESUME_DATA.presentations.map((presentation) => {
+            return (
+              <Card key={presentation.title}>
+                <CardHeader>
+                  {/* <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="font-semibold leading-none">
+                      {education.degree}
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {education.start} - {education.end}
+                    </div>
+                  </div> */}
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="font-semibold leading-none">
+                      <a className="hover:underline" href={presentation.slide_link}>
+                        {presentation.title}
+                      </a>
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {presentation.date}
+                    </div>
+                  </div>
+                  <div className="font-mono text-sm leading-none"><a className="hover:underline" href={presentation.event_link}>{presentation.event}</a></div>
+                  <span className="gap-x-1">
+                    {presentation.badges.map((badge) => (
+                      <Badge
+                        variant="secondary"
+                        className="align-middle text-xs"
+                        key={badge}
+                      >
+                        {badge}
+                      </Badge>
+                    ))}
+                  </span>
+                  <h4 className="font-mono text-sm leading-none">
+                    {presentation.authors}
+                  </h4>
+                </CardHeader>
+                <CardContent className="mt-2 text-xs">
+                  {presentation.description}
+                </CardContent>
+              </Card>
+            );
+          })}
+        </Section>
 
         <Section>
           <h2 className="text-xl font-bold">Education</h2>
@@ -220,19 +267,25 @@ export default function Page() {
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="font-semibold leading-none">
-                      {education.school}
+                      {education.degree}
                     </h3>
                     <div className="text-sm tabular-nums text-gray-500">
                       {education.start} - {education.end}
                     </div>
                   </div>
+                  <h4 className="font-mono text-sm leading-none">
+                      {education.faculty}, {education.school}
+                  </h4>
                 </CardHeader>
-                <h4 className="font-mono text-sm leading-none">
-                    {education.faculty}
-                </h4>
-                {/* <CardContent className="mt-2">{education.faculty}</CardContent> */}
-                <CardContent className="mt-2">{education.degree}</CardContent>
-                <CardContent className="mt-2">{education.major}</CardContent>
+                <CardContent className="mt-2 text-sm leading-none">
+                  <div>{education.major}</div>
+                  <div className="mt-2 text-sm leading-none">
+                    <a className="hover:underline" href="documents/MUICT_SP2023_02_MosquitoSED.pdf">
+                      Thesis Title: <b>{education.thesis_title}</b>
+                    </a>
+                  </div>
+                  <div className="mt-2 text-sm leading-none">Advisor: <b>{education.thesis_advisor}</b></div>
+                </CardContent>
               </Card>
             );
           })}
