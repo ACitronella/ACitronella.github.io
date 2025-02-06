@@ -1,4 +1,4 @@
-import { GitHubIcon, LinkedInIcon } from "@/components/icons";
+import { GitHubIcon, LinkedInIcon, GoogleScholarIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "Phuriwat Angkoondittaphong",
@@ -6,11 +6,11 @@ export const RESUME_DATA = {
   location: "Bangkok, Thailand",
   locationLink: "https://www.google.com/maps/place/Bangkok/",
   about:
-    "CS Student with background in Deep Learning",
+    "A Researcher in Deep Learning.",
   summary:
-    "A freshly graduate computer science student who passionate in expanding sets of knowledge in the world. Currently, I'm struggling to find a job.",
+    "A freshly graduate computer science student who passionate in expanding sets of knowledge in the world. \
+    Currently, I'm working on federated learning on medical image.",
   avatarUrl: "https://avatars.githubusercontent.com/u/55622586?s=400&v=4",
-  // personalWebsiteUrl: "https://google.com",
   contact: {
     email: "phuriwat.boat@gmail.com",
     tel: null,
@@ -25,11 +25,11 @@ export const RESUME_DATA = {
         url: "https://www.linkedin.com/in/phuriwat-angkoondittaphong/",
         icon: LinkedInIcon,
       },
-      // {
-        // name: "X",
-        // url: "https://x.com/BartoszJarocki",
-        // icon: XIcon,
-      // },
+      {
+        name: "Google Scholar",
+        url: "https://scholar.google.com/citations?user=qhZU2FoAAAAJ",
+        icon: GoogleScholarIcon,
+      },
     ],
   },
   research:[
@@ -64,11 +64,12 @@ export const RESUME_DATA = {
       faculty: "Faculty of Information and Communication Technology",
       school: "Mahidol University",
       degree: "Bachelor of Science in Information and Communication Technology",
-      major: "Major in Computer Science",
+      major: "Major in Computer Science (First Class Honours)",
       start: "2020",
       end: "2024",
       thesis_title: "MosWing: A Noise-Robust Mosquito Wingbeat Detection Model",
-      thesis_advisor: "Asst. Prof. Dr. Akara Supratak"
+      thesis_advisor: "Asst. Prof. Dr. Akara Supratak",
+      thesis_link: "documents/MUICT_SP2023_02_MosquitoSED.pdf"
     },
   ],
   works: [
@@ -79,7 +80,7 @@ export const RESUME_DATA = {
       title: "Research Assistant",
       start: "2024",
       end: "Now",
-      description: "See more detail in academic experience.",
+      description: "See more detail in Research Project.",
     },
     {
       company: "Faculty of Information and Communication Technology, Mahidol University", // Faculty of Information and Communication Technology, Mahidol University is too long
@@ -88,7 +89,7 @@ export const RESUME_DATA = {
       title: "Student Research Assistant",
       start: "2021",
       end: "2024",
-      description: "See more detail in academic experience.",
+      description: "Worked on Low-Budget Deep Active Learning on Eyelid Localization, Noise-Robust Mosquito Wingbeat Sound Event Detection, Noise-Robust Mosquito Wingbeat Sound Event Detection, Foot Pad Dermatitis (FPD) Severity Identifier. See more detail in Research Project.",
     },
     {
       company: "BotNoi Group",
@@ -133,7 +134,7 @@ export const RESUME_DATA = {
     "Python",
     "TensorFlow",
     "Pytorch",
-    "Machine Learning",
+    "Deep Learning",
     "Sound Event Detection",
     "Image Classification",
     "Image Segmentation",
@@ -150,6 +151,16 @@ export const RESUME_DATA = {
       slide_link: "presentations/jaist/workshop_quantum_emb_thaiweek.pdf",
       event_link: "https://www.jaist.ac.jp/event/jaist-thai-week/2024/",
       date: "13 Sep 2024"
+    },
+    {
+      title: "MosWing: a Noise-Robust Mosquito Wingbeat Detection Model",
+      event: "Young Raising Star of Science 2024 in STT50",
+      authors: "Phuriwat Angkoondittaphong, Napahatai Sittirit, Danaidech Ardsamai, Akara Supratak",
+      badges: ["Polyphonic Sound Event Detection", "Mosquito Classification", "Noise-robust Sound Event Detection"],
+      description: "More detail in Noise-Robust Mosquito Wingbeat Sound Event Detection in Research Project section.",
+      slide_link: "presentations/yrss24/YRSS - slides.pdf",
+      event_link: "https://stt50.scisoc.or.th/",
+      date: "26 Nov 2024"
     }
   ],
   // projects: [
