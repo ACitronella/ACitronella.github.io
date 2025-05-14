@@ -107,9 +107,8 @@ export default function Page() {
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
                         {work.title}
-                      </a>
+                      
 
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
@@ -128,9 +127,11 @@ export default function Page() {
                     </div>
                   </div>
 
-                  <h4 className="font-mono text-sm leading-none">
-                    {work.company}
-                  </h4>
+                  <a className="hover:underline" href={work.link}>
+                    <h4 className="font-mono text-sm leading-none">
+                      {work.company}
+                    </h4>
+                  </a>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
                   {work.description}
@@ -259,6 +260,40 @@ export default function Page() {
             );
           })}
         </Section>
+          
+        <Section>
+          <h2 className="text-xl font-bold">Article</h2>
+          {RESUME_DATA.articles.map((article) => {
+            return (
+              <Card key={article.title}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="font-semibold leading-none">
+                      <a className="hover:underline" href={article.article_link}>
+                        {article.title}
+                      </a>
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {article.date}
+                    </div>
+                  </div>
+                  <div className="font-mono text-sm leading-none"><a className="hover:underline" href={article.platform_link}>{article.platform}</a></div>
+                  <span className="gap-x-1">
+                    {article.badges.map((badge) => (
+                      <Badge
+                        variant="secondary"
+                        className="align-middle text-xs"
+                        key={badge}
+                      >
+                        {badge}
+                      </Badge>
+                    ))}
+                  </span>
+                </CardHeader>
+              </Card>
+            );
+          })}
+        </Section>
 
         <Section>
           <h2 className="text-xl font-bold">Education</h2>
@@ -274,9 +309,11 @@ export default function Page() {
                       {education.start} - {education.end}
                     </div>
                   </div>
-                  <h4 className="font-mono text-sm leading-none">
-                    {education.faculty}, {education.school}
-                  </h4>
+                  <a className="hover:underline"  href={education.edu_link}>
+                    <h4 className="font-mono text-sm leading-none">
+                      {education.faculty}, {education.school}
+                    </h4>
+                  </a>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
                   <div>{education.major}</div>
@@ -285,7 +322,11 @@ export default function Page() {
                       Thesis Title: <b>{education.thesis_title}</b>
                     </a>
                   </div>
-                  <div>Advisor: <b>{education.thesis_advisor}</b></div>
+                  <div>
+                    <a className="hover:underline" href={education.advisor_link}>
+                      Advisor: <b>{education.thesis_advisor}</b>
+                    </a>
+                  </div>
                 </CardContent>
               </Card>
             );

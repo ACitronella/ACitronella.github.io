@@ -69,7 +69,9 @@ export const RESUME_DATA = {
       end: "2024",
       thesis_title: "MosWing: A Noise-Robust Mosquito Wingbeat Detection Model",
       thesis_advisor: "Asst. Prof. Dr. Akara Supratak",
-      thesis_link: "documents/MUICT_SP2023_02_MosquitoSED.pdf"
+      thesis_link: "documents/MUICT_SP2023_02_MosquitoSED.pdf",
+      edu_link: "https://www.ict.mahidol.ac.th/",
+      advisor_link: "https://akaraspt.github.io/"
     },
   ],
   works: [
@@ -143,14 +145,14 @@ export const RESUME_DATA = {
 
   presentations: [
     {
-      title: "Finding Semantic-preserved Representation of Knowledge in Description Logic Ontologies: Preliminary Results in RiceDO and TreatO",
-      event: "JAIST-Thai Symposium 2024 Toward Next Generation Generative AI and Beyond",
-      authors: "Phuriwat Angkoondittaphong, ReaLearn Lab",
-      badges: ["Representation Learning", "Hierachy Aware Knowledge Base Embedding"],
-      description: "An attempt for apply Embed2Reason (E2R), which is designed for embed knowledge base ALC into vector space, on RiceDO and TreatO which are EL Ontologies.",
-      slide_link: "presentations/jaist/workshop_quantum_emb_thaiweek.pdf",
-      event_link: "https://www.jaist.ac.jp/event/jaist-thai-week/2024/",
-      date: "13 Sep 2024"
+      title: "CAN'T IT TRAIN FASTER?",
+      event: "Super AI Eng: Research Track Lightning Talk",
+      authors: "Phuriwat Angkoondittaphong",
+      badges: ["PyTorch", "Heterogeneous Computing"],
+      description: "General tips and trick for using CPUs and GPUs for training deep learning model effieciently.",
+      slide_link: "https://docs.google.com/presentation/d/1Rtwgy13bx2I4iOff5jSOyyXWRFKk6aX2MXoLi2Toej4/edit?usp=sharing",
+      event_link: "https://superai.aiat.or.th/",
+      date: "7 May 2025"
     },
     {
       title: "MosWing: a Noise-Robust Mosquito Wingbeat Detection Model",
@@ -161,8 +163,45 @@ export const RESUME_DATA = {
       slide_link: "presentations/yrss24/YRSS - slides.pdf",
       event_link: "https://stt50.scisoc.or.th/",
       date: "26 Nov 2024"
-    }
+    },
+    {
+      title: "Finding Semantic-preserved Representation of Knowledge in Description Logic Ontologies: Preliminary Results in RiceDO and TreatO",
+      event: "JAIST-Thai Symposium 2024 Toward Next Generation Generative AI and Beyond",
+      authors: "Phuriwat Angkoondittaphong, ReaLearn Lab",
+      badges: ["Representation Learning", "Hierachy Aware Knowledge Base Embedding"],
+      description: "An attempt for apply Embed2Reason (E2R), which is designed for embed knowledge base ALC into vector space, on RiceDO and TreatO which are EL Ontologies.",
+      slide_link: "presentations/jaist/workshop_quantum_emb_thaiweek.pdf",
+      event_link: "https://www.jaist.ac.jp/event/jaist-thai-week/2024/",
+      date: "13 Sep 2024"
+    },
   ],
+  articles: [
+    {
+      title: "วิธีคร็อปรูปขั้นเทพ(?) ด้วยคณิตศาสตร์",
+      platform: "เพจเฟสบุ๊ค คณิตศาสตร์อย่างที่ควรจะเป็น",
+      article_link: "https://mathasitis.ghost.io/seam-carving/",
+      platform_link: "https://www.facebook.com/mathasitis",
+      badges: ["Seam Carving"],
+      date: "10 May 2025",
+    },
+    {
+      title: "คอมพิวเตอร์สุ่มเลขไม่เป็น",
+      platform: "เพจเฟสบุ๊ค คณิตศาสตร์อย่างที่ควรจะเป็น",
+      article_link: "https://mathasitis.ghost.io/how-computer-random/",
+      platform_link: "https://www.facebook.com/mathasitis",
+      badges: ["Random Number Generator"],
+      date: "21 Feb 2025",
+    },
+    {
+      title: "Who said Python is easy? (The Importance of Type Hinting in Python Programming)",
+      platform: "Medium",
+      article_link: "https://medium.com/@acitronella/who-said-python-is-easy-the-importance-of-type-hinting-in-python-programming-33457e2e95cd",
+      platform_link: "https://medium.com/",
+      badges: ["Python", "Type Hinting"],
+      date: "10 May 2023",
+      
+    }
+  ]
   // projects: [
     // {
       // title: "88SandBox Line LIFF",
