@@ -121,14 +121,14 @@ export const RESUME_DATA = {
       badges: [
         "Medical Image Processing", "Normal Pressure Hydrocephalus", "Weak Supervision", "NPH Classification"
       ],
-      description: "To be published in Artificial Intelligence in Medicine.",
+      description: "Published in Computers in Biology and Medicine.",
     },
     {
       authors: "Akara Supratak, Phuriwat Angkoondittaphong, Napahatai Sittirit, Watsaporn Pornwatanacharoen, Pimkwan Jaru-ampornpan, and Thanapon Noraset",
       title: "A Long-Term Active Learning Framework for Eyelid Keypoint Detection in High-Frame-Rate Blinking Videos",
-      link: undefined,
+      link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5090626",
       badges: ["Active Learning", "Keypoint Detection", "High-Frame-Rate Videos", "Blink Analysis"],
-      description: "To be published in Applied Soft Computing Journal.",
+      description: "Preprinted on SSRN.",
     }
   ],
 
