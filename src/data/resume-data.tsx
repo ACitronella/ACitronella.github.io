@@ -137,10 +137,11 @@ export const RESUME_DATA = {
     "TensorFlow",
     "Pytorch",
     "Deep Learning",
-    "Sound Event Detection",
     "Image Classification",
     "Image Segmentation",
+    "Sound Event Detection",
     "Deep Active Learning",
+    "Federated Learning",
   ],
 
   presentations: [
