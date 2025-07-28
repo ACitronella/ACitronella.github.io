@@ -8,7 +8,7 @@ export const RESUME_DATA = {
   about:
     "A Researcher in Deep Learning.",
   summary:
-    "A freshly graduate computer science student who passionate in expanding sets of knowledge in the world. \
+    "A research assistant who passionate in expanding sets of knowledge in the world. \
     Currently, I'm working on federated learning on medical image.",
   avatarUrl: "https://avatars.githubusercontent.com/u/55622586?s=400&v=4",
   contact: {
@@ -76,7 +76,7 @@ export const RESUME_DATA = {
   ],
   works: [
     {
-      company: "Faculty of Information and Communication Technology, Mahidol University", // Faculty of Information and Communication Technology, Mahidol University is too long
+      company: "Faculty of Information and Communication Technology, Mahidol University",
       link: "https://www.ict.mahidol.ac.th/",
       badges: [],
       title: "Research Assistant",
@@ -85,7 +85,7 @@ export const RESUME_DATA = {
       description: "See more detail in Research Project.",
     },
     {
-      company: "Faculty of Information and Communication Technology, Mahidol University", // Faculty of Information and Communication Technology, Mahidol University is too long
+      company: "Faculty of Information and Communication Technology, Mahidol University",
       link: "https://www.ict.mahidol.ac.th/",
       badges: [],
       title: "Student Research Assistant",
@@ -106,22 +106,22 @@ export const RESUME_DATA = {
   ],
   publications: [
     {
-      authors: "Dittapong Songsaeng, Poonsuta Nava-apisak, Jittsupa Wongsripuemtet, Siripra Kingchan, Phuriwat Angkoondittaphong, Phattaranan Phawaphutanon, and Akara Supratak",
-      title: "The Diagnostic Accuracy of Artificial Intelligence in Radiological Markers of Normal-Pressure Hydrocephalus (NPH) on Non-Contrast CT Scans of the Brain",
-      link: "https://www.mdpi.com/2075-4418/13/17/2840",
-      badges: [
-        "Medical Image Processing", "Normal Pressure Hydrocephalus", "Weak Supervision", "NPH Classification"
-      ],
-      description: "Published in Diagnostics.",
-    },
-    {
       authors: "Akara Supratak, Siripra Kingchan, Phuriwat Angkoondittaphong, Poonsuta Nava-apisak, Jittsupa Wongsripuemtet, Thanapon Noraset, Worapan Kusakunniran, Peter Haddawy, and Dittapong Songsaeng",
       title: "Normal Pressure Hydrocephalus Classification using Weakly-Supervised Local Feature Extraction Algorithm",
-      link: undefined,
+      link: "https://doi.org/10.1016/j.compbiomed.2025.110751",
       badges: [
         "Medical Image Processing", "Normal Pressure Hydrocephalus", "Weak Supervision", "NPH Classification"
       ],
-      description: "Published in Computers in Biology and Medicine.",
+      description: "Published in Computers in Biology and Medicine on 1 Sep 2025.",
+    },
+    {
+      authors: "Dittapong Songsaeng, Poonsuta Nava-apisak, Jittsupa Wongsripuemtet, Siripra Kingchan, Phuriwat Angkoondittaphong, Phattaranan Phawaphutanon, and Akara Supratak",
+      title: "The Diagnostic Accuracy of Artificial Intelligence in Radiological Markers of Normal-Pressure Hydrocephalus (NPH) on Non-Contrast CT Scans of the Brain",
+      link: "https://doi.org/10.3390/diagnostics13172840",
+      badges: [
+        "Medical Image Processing", "Normal Pressure Hydrocephalus", "Weak Supervision", "NPH Classification"
+      ],
+      description: "Published in Diagnostics on 1 Sep 2023.",
     },
     {
       authors: "Akara Supratak, Phuriwat Angkoondittaphong, Napahatai Sittirit, Watsaporn Pornwatanacharoen, Pimkwan Jaru-ampornpan, and Thanapon Noraset",
@@ -142,6 +142,7 @@ export const RESUME_DATA = {
     "Sound Event Detection",
     "Deep Active Learning",
     "Federated Learning",
+    "Slurm",
   ],
 
   presentations: [

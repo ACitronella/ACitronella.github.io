@@ -100,7 +100,7 @@ export default function Page() {
         </Section>
 
         <Section>
-          <h2 className="text-xl font-bold">Work Experience</h2>
+          <h2 className="text-xl font-bold">Work Experiences</h2>
           {RESUME_DATA.works.map((work) => {
             return (
               <Card key={work.company}>
@@ -142,7 +142,7 @@ export default function Page() {
         </Section>
 
         <Section>
-          <h2 className="text-xl font-bold">Research Project</h2>
+          <h2 className="text-xl font-bold">Research Projects</h2>
           {RESUME_DATA.research.map((rp) => {
             return (
               <Card key={rp.company}>
@@ -214,7 +214,7 @@ export default function Page() {
         </Section>
 
         <Section>
-          <h2 className="text-xl font-bold">Presentation</h2>
+          <h2 className="text-xl font-bold">Presentations</h2>
           {RESUME_DATA.presentations.map((presentation) => {
             return (
               <Card key={presentation.title}>
@@ -262,7 +262,7 @@ export default function Page() {
         </Section>
           
         <Section>
-          <h2 className="text-xl font-bold">Article</h2>
+          <h2 className="text-xl font-bold">Articles</h2>
           {RESUME_DATA.articles.map((article) => {
             return (
               <Card key={article.title}>
@@ -296,7 +296,7 @@ export default function Page() {
         </Section>
 
         <Section>
-          <h2 className="text-xl font-bold">Education</h2>
+          <h2 className="text-xl font-bold">Educations</h2>
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
