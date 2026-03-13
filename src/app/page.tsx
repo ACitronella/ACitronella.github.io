@@ -177,7 +177,7 @@ export default function Page() {
         </Section>
 
         <Section>
-          <h2 className="text-xl font-bold">Publication</h2>
+          <h2 className="text-xl font-bold">Publications</h2>
           {RESUME_DATA.publications.map((publication) => {
             return (
               <Card key={publication.title}>
@@ -332,14 +332,15 @@ export default function Page() {
             );
           })}
         </Section>
-        <Section>
+
+        {/* <Section>
           <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
             })}
           </div>
-        </Section>
+        </Section> */}
 
         {/* <Section className="print-force-new-page scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
@@ -357,6 +358,15 @@ export default function Page() {
             })}
           </div>
         </Section> */}
+
+        <Section className="print-force-new-page scroll-mb-16">
+          <h2 className="text-xl font-bold">Badminton Schedule</h2>
+          <p className="text-pretty font-mono text-sm text-muted-foreground">
+            I think it would be funny if I add a calendar for badminton here. So, here we go. Contact me if you want to join, we usually book <a className="underline" href="https://maps.app.goo.gl/jeDYfanej3vLXx5f6">Manta Court</a> (Near BTS Phahonyothin 24).
+          </p>
+          <iframe src="https://calendar.google.com/calendar/embed?src=5b5c3523a7774363cf8c0c150d5e1865f7a624d76f52f7e1535283dd08dda111%40group.calendar.google.com&ctz=Asia%2FBangkok" style={{border: 0}} height="600"></iframe>
+        </Section>
+
       </section>
 
       {/* <CommandMenu

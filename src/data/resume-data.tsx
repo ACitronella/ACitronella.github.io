@@ -6,11 +6,11 @@ export const RESUME_DATA = {
   location: "Bangkok, Thailand",
   locationLink: "https://www.google.com/maps/place/Bangkok/",
   about:
-    "A Researcher in Deep Learning.",
+    "A Researcher in Deep Learning, a newbie in badminton, and a gym go-er",
   summary:
-    "A research assistant who passionate in expanding sets of knowledge in the world. \
+    "A researcher who is passionate in expanding sets of knowledge in the world. \
     Currently, I'm working on federated learning on medical image.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/55622586?s=400&v=4",
+  avatarUrl: "pfp.jpg",
   contact: {
     email: "phuriwat.boat@gmail.com",
     tel: null,
@@ -123,13 +123,13 @@ export const RESUME_DATA = {
       ],
       description: "Published in Diagnostics on 1 Sep 2023.",
     },
-    {
-      authors: "Akara Supratak, Phuriwat Angkoondittaphong, Napahatai Sittirit, Watsaporn Pornwatanacharoen, Pimkwan Jaru-ampornpan, and Thanapon Noraset",
-      title: "A Long-Term Active Learning Framework for Eyelid Keypoint Detection in High-Frame-Rate Blinking Videos",
-      link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5090626",
-      badges: ["Active Learning", "Keypoint Detection", "High-Frame-Rate Videos", "Blink Analysis"],
-      description: "Preprinted on SSRN.",
-    }
+    // {
+    //   authors: "Akara Supratak, Phuriwat Angkoondittaphong, Napahatai Sittirit, Watsaporn Pornwatanacharoen, Pimkwan Jaru-ampornpan, and Thanapon Noraset",
+    //   title: "A Long-Term Active Learning Framework for Eyelid Keypoint Detection in High-Frame-Rate Blinking Videos",
+    //   link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5090626",
+    //   badges: ["Active Learning", "Keypoint Detection", "High-Frame-Rate Videos", "Blink Analysis"],
+    //   description: "Preprinted on SSRN.",
+    // }
   ],
 
   skills: [
@@ -148,7 +148,7 @@ export const RESUME_DATA = {
   presentations: [
     {
       title: "CAN'T IT TRAIN FASTER?",
-      event: "Super AI Eng: Research Track Lightning Talk",
+      event: "Super AI Eng SS5: Research Track Lightning Talk",
       authors: "Phuriwat Angkoondittaphong",
       badges: ["PyTorch", "Heterogeneous Computing"],
       description: "General tips and trick for using CPUs and GPUs for training deep learning model effieciently.",
@@ -166,16 +166,16 @@ export const RESUME_DATA = {
       event_link: "https://stt50.scisoc.or.th/",
       date: "26 Nov 2024"
     },
-    {
-      title: "Finding Semantic-preserved Representation of Knowledge in Description Logic Ontologies: Preliminary Results in RiceDO and TreatO",
-      event: "JAIST-Thai Symposium 2024 Toward Next Generation Generative AI and Beyond",
-      authors: "Phuriwat Angkoondittaphong, ReaLearn Lab",
-      badges: ["Representation Learning", "Hierachy Aware Knowledge Base Embedding"],
-      description: "An attempt for apply Embed2Reason (E2R), which is designed for embed knowledge base ALC into vector space, on RiceDO and TreatO which are EL Ontologies.",
-      slide_link: "presentations/jaist/workshop_quantum_emb_thaiweek.pdf",
-      event_link: "https://www.jaist.ac.jp/event/jaist-thai-week/2024/",
-      date: "13 Sep 2024"
-    },
+    // {
+    //   title: "Finding Semantic-preserved Representation of Knowledge in Description Logic Ontologies: Preliminary Results in RiceDO and TreatO",
+    //   event: "JAIST-Thai Symposium 2024 Toward Next Generation Generative AI and Beyond",
+    //   authors: "Phuriwat Angkoondittaphong, ReaLearn Lab",
+    //   badges: ["Representation Learning", "Hierachy Aware Knowledge Base Embedding"],
+    //   description: "An attempt for apply Embed2Reason (E2R), which is designed for embed knowledge base ALC into vector space, on RiceDO and TreatO which are EL Ontologies.",
+    //   slide_link: "presentations/jaist/workshop_quantum_emb_thaiweek.pdf",
+    //   event_link: "https://www.jaist.ac.jp/event/jaist-thai-week/2024/",
+    //   date: "13 Sep 2024"
+    // },
   ],
   articles: [
     {
